@@ -69,6 +69,35 @@
         padding: 0 25px;
         font-size: 1rem;
     }
+
+    /* producr cards */
+    .products-section {
+        padding: 60px 0;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .products-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .product-info {
+        padding: 20px;
+    }
+    
+    .product-name {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 480px) {

@@ -1,0 +1,142 @@
+.company-intro {
+    padding: 80px 0;
+    background-color: hsl(0, 100%, 21%);
+}
+
+/* container for centering */
+.company-intro .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* grid layout for two-column design */
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* company info - right side */
+.company-info {
+    padding-left: 20px;
+}
+
+/* company title - aligned to right */
+.company-title {
+    text-align: right;
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    padding-right: 15px;
+}
+
+/* title accent line */
+.company-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ff9800;
+    border-radius: 2px;
+}
+
+/* company history text */
+.company-history {
+    margin-bottom: 40px;
+}
+
+.company-history p {
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+/* clients section */
+.clients-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.clients-title {
+    text-align: right;
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* client logos grid */
+.client-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+/* individual client logo */
+.client-logo {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #eee;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.client-logo img{
+    max-width:70%;
+    max-height:70%;
+}
+
+.client-logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* logo placeholder */
+.logo-placeholder {
+    color: #777;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* company image - left side */
+.company-image {
+    padding-right: 20px;
+}
+
+/* image container */
+.image-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* image placeholder */
+.image-placeholder {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1.3rem;
+    font-weight: 500;
+}

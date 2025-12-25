@@ -1,0 +1,77 @@
+
+#reviews-section {
+    background-image: url("../images/FW25-Holiday-HeroBanner-Main-2880x900-Desktop_2.webp");
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.review-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.review-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-text {
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+    position: relative;
+}
+
+.review-quote {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-style: italic;
+    position: relative;
+    padding: 0 20px;
+}
+
+.review-reverse .review-quote{
+    text-align: left;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* First review - reviewer info left aligned */
+.reviewer-left {
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* Second review - reviewer info right aligned */
+.reviewer-right {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.reviewer-title {
+    font-size: 0.9rem;
+    color: #ffffff;
+}

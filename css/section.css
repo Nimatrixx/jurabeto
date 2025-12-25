@@ -1,0 +1,53 @@
+.section {
+    padding-top: 40px;
+}
+
+.section-title {
+    text-align: center;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.white-title{
+    color:#ffffff;
+}
+/* title underline effect */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100px;
+    height: 4px;
+    background-color: #ff9800;
+    border-radius: 2px;
+}
+
+.section-right-title {
+    text-align: right;
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    padding-right: 15px;
+}
+
+/* title accent line */
+.section-right-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ff9800;
+    border-radius: 2px;
+}
